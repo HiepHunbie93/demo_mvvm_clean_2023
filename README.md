@@ -2,11 +2,25 @@
 
 The DEMO MVVM CLEAR - App consuming a new examples it has been built with clean architecture principles, Repository Pattern, and MVVM pattern as well as Architecture Components.
 
-#### 1. Environment
+#### 1. Functions
 
-- This tutorial run in MacOS M1 Ventura 13.2.1 (22D68)
-- Homebrew 4.0.4
-- NodeJS Version v18.11.0
-- NPM 8.19.2
-- LBRD 1.0 will run on Python 3.9
-- LBRD 2.0 will run on Python v3.10.10
+- Get data from API
+- Show gridview data
+- Search local
+- Sort local
+
+#### 2. Modules
+
+- data : The data layer implements the repository interface that the domain layer defines. This layer provide a single source of truth for data.
+- di : Handles data interacting with the network. 
+- doman : The domain layer contains the UseCases that encapsulate a single and very specific task that can be performed. This task is part of the business logic of the application. 
+- ui : MVVM with ViewModels exposing LiveData that the UI consume. The ViewModel does not know anything about it's consumers.
+- util : Some support functions and constant value
+
+#### 3. ScreenShot
+
+![alt text](https://github.com/HiepHunbie93/demo_mvvm_clean_2023/blob/master/app/src/main/res/drawable/screenshot1.jpg?raw=true)
+
+![alt text](https://github.com/HiepHunbie93/demo_mvvm_clean_2023/blob/master/app/src/main/res/drawable/screenshot2.jpg?raw=true)
+
+![alt text](https://github.com/HiepHunbie93/demo_mvvm_clean_2023/blob/master/app/src/main/res/drawable/screenshot3.jpg?raw=true)
